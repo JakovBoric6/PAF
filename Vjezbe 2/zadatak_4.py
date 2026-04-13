@@ -23,7 +23,7 @@ analiticko_rjes =(b**3/3)-(a**3/3)
 print("analitičko rjesenje za integral x**2 od ",a, "do" ,b," je:" ,analiticko_rjes,)
 
 # 4. stavljam razlicite podjele kako bi ih imao za numericko , ovo s podjelama je dobro predlozeno na https://stackoverflow.com/search?q=%5Bpython%5D+numerical+integration&s=6bf56f75-9935-414c-a7af-67a2047054ba
-podjele= [5,10,13,68,100,260,509,1010]
+podjele=range(1,1000, 10)
 #definiram liste u koje cu stavljati rezultate koje edobivam za svku od podjela!
 donja_međa_rez=[] #Donju i gornju među skupljam kao rezultate pravokutne aproksimacije!
 gornja_međa_rez=[]
