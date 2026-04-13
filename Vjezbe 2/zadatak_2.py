@@ -22,7 +22,7 @@ p_y=0.0
 analiticki_domet1= i_analiticki_domet(v0,kut)
 
 #definiram infinitezimalni element pomocu logaritamske skale (mogu podesiti broj tocaka koji hocu)
-dt_vrijednosti=np.logspace(-4, 0, 10000) 
+dt_vrijednosti=np.linspace (0.0001, 0.1, 1000)
 
 relativna_pogrjeska=[] #u ovu listu u appendati pogreske koje dobijem
 
@@ -41,8 +41,6 @@ for dt in dt_vrijednosti:
 
 plt.figure()
 plt.plot(dt_vrijednosti,relativna_pogrjeska) 
-plt.xscale('log')
-plt.yscale('log')
 plt.xlabel('t (s)')
 plt.ylabel('relativna pogreška')
 plt.title('ovisnost relativne pogreške o dt')
